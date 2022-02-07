@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function funk();
+        {
+            if(document.Sel3.password.value==document.Sel3.repPassowrd.value)
+                alert("You have successfully registered\nName="+document.Sel3.username.value+"\nPassword="+document.Sel3.password.value);
+            else
+                alert("Password error, try again!");
+        }
+	</script>
+</head>
+<body>
+<form name="Sel3"> 
+<table> 
+	<tr>
+		<td> UserName: </td>
+		<td> <input type="text" name="username" ></td>
+	</tr>
+	<tr>
+		<td> Password: </td>
+		<td> <input type="Password" name="password" onFocus="this.select();"></td>
+	</tr>
+	<tr>
+		<td> Repeat password: </td>
+		<td> <input type="Password" name="repPassword" onFocus="this.select();"></td>
+	</tr>	 
+	<button id="regButton" onClick="funk();"> Register </button>
+</table> 
+</form>
+
+
+</body>
+</html>
